@@ -5,10 +5,8 @@ function App() {
     const [books, setBooks] = useState([]);
 
     const createBook = (title) => {
-        // BAD CODE!
-        books.push({ id: 123, title: title });
-        console.log(books);
-        setBooks(books);
+        const updatedBooks = [...books, { id: 123, titl; }];
+        setBooks(updatedBooks);
     };
 
     return (
